@@ -1,7 +1,4 @@
-// var arrow = document.getElementById("arrow")
-//
-// var $arow = $("body #arrow")
-// 4arrow.addEventListener()
+
 $.ajax({
     url: "http://worldtimeapi.org/api/timezone/Europe/Warsaw.txt",
     method: "get",

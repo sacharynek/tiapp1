@@ -44,7 +44,8 @@ header img {
     height:50%;
     left: 50%;
     transform: translateX(-50%);
-    top:40%
+    top:40%;
+    z-index:0;
 }
 
 
@@ -79,6 +80,7 @@ header h3{
 }
 .hamburger, .navigation {
     transition: transform .3s .1s ease-in-out;
+    z-index:3;
 }
 
 .hamburger--active {
@@ -336,7 +338,7 @@ button {
 }
 
 article {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 400;
     padding: 20px;
     margin: 20px;
@@ -349,6 +351,9 @@ article {
     h3 span::after  {
         content: '\A';
         white-space: pre;
+    }
+    article {
+        font-size: 1rem;
     }
 }
 
@@ -363,6 +368,9 @@ article {
         transform: translateX(-50%);
         top:40%;
     }
+    article {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 320px){
@@ -372,14 +380,23 @@ article {
     header hgroup{
         transform: rotate(-15deg);
     }
+
+    article {
+        font-size: 1rem;
+        transform: rotate(-15deg);
+    }
 }
 
 @media (max-width: 395px){
     header h3  {
-        font-size: 2.4rem;
+        font-size: 1.4rem;
     }
     header hgroup{
 
+    }
+
+    article {
+        font-size: 1rem;
     }
 }
 
