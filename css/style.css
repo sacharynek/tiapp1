@@ -67,6 +67,7 @@ header h3{
     font-weight: 400;
 }
 
+
 .hamburger {
     padding: 20px;
     display: inline-block;
@@ -135,6 +136,26 @@ header h3{
 
 .hamburger--active .hamburger-inner::after {
     transform: translateY(-10px) rotate(-45deg) ;
+}
+
+form {
+    font-family: 'Oswald', sans-serif;
+    font-size:3rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
 }
 
 .navigation {
@@ -280,6 +301,14 @@ button {
 }
 .github{
     color: black;
+}
+
+article {
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 20px;
+    margin: 20px;
+    text-indent: 2em;
 }
 
 
