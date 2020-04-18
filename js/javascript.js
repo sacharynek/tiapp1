@@ -40,6 +40,15 @@ const handleClick = () => {
 
 hamburger.addEventListener('click', handleClick);
 
+function validateForm() {
+    var fname = document.forms["formoid"]["name"].value;
+    var lname = document.forms["formoid"]["name2"].value;
+    var message = document.forms["formoid"]["message"].value;
+    if (fname == "" || lname =="" || message=="") {
+        alert("All Fields must be filled out");
+        return false;
+    }
+}
 
 
 

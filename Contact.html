@@ -31,6 +31,7 @@
             <li class="navigation-item"><a href="offer.html">Oferta</a></li>
             <li class="navigation-item"><a href="Contact.html">Kontakt</a></li>
             <li class="navigation-item"><a href="index.html">Strona Glówna</a></li>
+            <li class="navigation-item" id="time"><a href="#">Data retrieved using Ajax: </a></li>
         </ul>
     </div>
 
@@ -46,7 +47,7 @@
 
 
 <main>
-    <form id="formoid" action="mailto:tomasz.lach@student.po.edu.pl" title="" method="post">
+    <form id="formoid" action="mailto:tomasz.lach@student.po.edu.pl" title="" method="post" name="formoid"  onsubmit="return validateForm();">
         <div>
             <label class="title">Imię</label>
             <input type="text" id="name" name="name" >
@@ -57,7 +58,7 @@
         </div>
         <div>
             <label class="title">Wiadomość</label>
-            <textarea></textarea>
+            <textarea name="message"></textarea>
         </div>
         <div>
             <input type="submit" id="submitButton"  name="submitButton" value="Submit">
