@@ -2,6 +2,15 @@
 //
 // var $arow = $("body #arrow")
 // 4arrow.addEventListener()
+$.ajax({
+    url: "http://worldtimeapi.org/api/timezone/Europe/Warsaw.txt",
+    method: "get",
+    success: function(response) {  console.log("Dane otrzymane: ", response); }
+}).done(function(data){
+    $('#time').append(JSON.stringify(data))
+});
+
+
 
 var $arrow = $("#arrow a");
 
@@ -32,20 +41,7 @@ const handleClick = () => {
 hamburger.addEventListener('click', handleClick);
 
 
-// $("#formoid").submit(function(event) {
-//     /* stop form from submitting normally */
-//     event.preventDefault();
-//     /* get the action attribute from the <form action=""> element */
-//     var $form = $( this ), url = $form.attr( 'action' );
-//
-//     /* Send the data using post with element id name and name2*/
-//     var posting = $.post( url, { name: $('#name').val(), name2: $('#name2').val() } );
-//
-//     /* Alerts the results */
-//     posting.done(function( data ) {
-//         alert('success');
-//     });
-// });
+
 
 
 
